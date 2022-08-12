@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="./reset.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <title>ENCRIPT4R</title>
+    </head>
+
+    <body class="grid">
+        <header class="header">
+            <img class="logo" src="IMAGENES/Logo.png">
+            <h1 class="titulo">ENCRIPT4R</h1>
+        </header>
+
+        <article class="main">
+            <textarea class="texto-principal" id="mensaje" placeholder="Escribe tu texto aquí..."></textarea>
+            <p class="adv"> ❢ Solo letras minúsculas y sin acentos</p>
+
+            <button class="boton-encriptar" id="encriptar" >Encriptar</button>
+            <button class="boton-desencriptar" id="desencriptar">Desencriptar</button>
+
+            <textarea class="texto-resultado" id="resultado" readonly></textarea>
+            
+            <div class="boton-de-pegado">
+                <button class="boton-pegado esconder" id="boton-pegar">Pegar</button>
+            </div>
+            
+            <div class="boton-resultado">
+                <button class="boton-copiar esconder" id="boton-copiar">Copiar</button>
+                <button class="boton-borrar esconder" id="boton-borrar">Borrar</button>
+            </div>
+        </article>
+
+        <footer class="footer">
+            <p class="nombre">Emanuel Surza Tenich<span class="tb">Estudiante en ingeniería en informática</span></p>
+        </footer>
+        <script src="./java.js"></script>
+    </body>
+</html>
